@@ -8,7 +8,7 @@ import { json } from "./json";
 function SurveyComponent() {
     const survey = new Model(json);
     survey.onComplete.add((result) => {
-        fetch("http://localhost:3001/submit", {
+        fetch("http://54.163.6.71:3001/submit", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
